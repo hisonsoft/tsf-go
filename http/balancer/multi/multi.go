@@ -7,12 +7,12 @@ import (
 
 	"github.com/go-kratos/kratos/v2/registry"
 	"github.com/go-kratos/kratos/v2/transport/http/balancer"
+	tBalancer "github.com/hisonsoft/tsf-go/balancer"
+	"github.com/hisonsoft/tsf-go/log"
+	"github.com/hisonsoft/tsf-go/naming"
+	"github.com/hisonsoft/tsf-go/pkg/meta"
+	"github.com/hisonsoft/tsf-go/route"
 	"github.com/openzipkin/zipkin-go"
-	tBalancer "github.com/tencentyun/tsf-go/balancer"
-	"github.com/tencentyun/tsf-go/log"
-	"github.com/tencentyun/tsf-go/naming"
-	"github.com/tencentyun/tsf-go/pkg/meta"
-	"github.com/tencentyun/tsf-go/route"
 )
 
 type Balancer struct {
