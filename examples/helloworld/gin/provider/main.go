@@ -6,8 +6,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-kratos/kratos/v2"
-	"github.com/tencentyun/tsf-go"
-	tgin "github.com/tencentyun/tsf-go/gin"
+	"github.com/hisonsoft/tsf-go"
+	tgin "github.com/hisonsoft/tsf-go/gin"
 
 	"github.com/go-kratos/kratos/v2/errors"
 	"github.com/go-kratos/kratos/v2/transport/http"

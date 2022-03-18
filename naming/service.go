@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/go-kratos/kratos/v2/registry"
-	"github.com/tencentyun/tsf-go/pkg/sys/env"
+	"github.com/hisonsoft/tsf-go/pkg/sys/env"
 )
 
 const (

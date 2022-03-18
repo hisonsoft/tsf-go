@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/go-kratos/kratos/v2/registry"
-	"github.com/tencentyun/tsf-go/naming"
-	"github.com/tencentyun/tsf-go/pkg/http"
-	"github.com/tencentyun/tsf-go/pkg/sys/env"
-	"github.com/tencentyun/tsf-go/pkg/util"
+	"github.com/hisonsoft/tsf-go/naming"
+	"github.com/hisonsoft/tsf-go/pkg/http"
+	"github.com/hisonsoft/tsf-go/pkg/sys/env"
+	"github.com/hisonsoft/tsf-go/pkg/util"
 )
 
 var _ registry.Discovery = &Consul{}

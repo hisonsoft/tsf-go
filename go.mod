@@ -1,4 +1,4 @@
-module github.com/tencentyun/tsf-go
+module github.com/hisonsoft/tsf-go
 
 go 1.14
 

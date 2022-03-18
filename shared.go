@@ -7,8 +7,8 @@ import (
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/transport"
 	"github.com/go-kratos/kratos/v2/transport/http"
-	"github.com/tencentyun/tsf-go/gin"
-	"github.com/tencentyun/tsf-go/util"
+	"github.com/hisonsoft/tsf-go/gin"
+	"github.com/hisonsoft/tsf-go/util"
 )
 
 func ServerOperation(ctx context.Context) (method string, operation string) {

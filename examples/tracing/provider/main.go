@@ -7,12 +7,12 @@ import (
 	"fmt"
 	"time"
 
-	tsf "github.com/tencentyun/tsf-go"
-	pb "github.com/tencentyun/tsf-go/examples/helloworld/proto"
-	"github.com/tencentyun/tsf-go/log"
-	"github.com/tencentyun/tsf-go/tracing"
-	"github.com/tencentyun/tsf-go/tracing/mysqlotel"
-	"github.com/tencentyun/tsf-go/tracing/redisotel"
+	tsf "github.com/hisonsoft/tsf-go"
+	pb "github.com/hisonsoft/tsf-go/examples/helloworld/proto"
+	"github.com/hisonsoft/tsf-go/log"
+	"github.com/hisonsoft/tsf-go/tracing"
+	"github.com/hisonsoft/tsf-go/tracing/mysqlotel"
+	"github.com/hisonsoft/tsf-go/tracing/redisotel"
 
 	"github.com/go-kratos/kratos/v2"
 	klog "github.com/go-kratos/kratos/v2/log"

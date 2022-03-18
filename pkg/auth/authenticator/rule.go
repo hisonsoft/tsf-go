@@ -3,8 +3,8 @@ package authenticator
 import (
 	"strings"
 
-	"github.com/tencentyun/tsf-go/pkg/meta"
-	"github.com/tencentyun/tsf-go/pkg/sys/tag"
+	"github.com/hisonsoft/tsf-go/pkg/meta"
+	"github.com/hisonsoft/tsf-go/pkg/sys/tag"
 )
 
 type AuthConfig struct {

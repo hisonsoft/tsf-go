@@ -11,21 +11,21 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/tencentyun/tsf-go/log"
-	"github.com/tencentyun/tsf-go/pkg/auth"
-	"github.com/tencentyun/tsf-go/pkg/auth/authenticator"
-	cfgConsul "github.com/tencentyun/tsf-go/pkg/config/consul"
-	tgrpc "github.com/tencentyun/tsf-go/pkg/grpc"         // NOTE: open json encoding by set header Content-Type: application/grpc+json
-	"github.com/tencentyun/tsf-go/pkg/grpc/encoding/json" // NOTE: open json encoding by set header Content-Type: application/grpc+json
-	"github.com/tencentyun/tsf-go/pkg/naming"
-	"github.com/tencentyun/tsf-go/pkg/naming/consul"
-	"github.com/tencentyun/tsf-go/pkg/proxy"
-	"github.com/tencentyun/tsf-go/pkg/sys/apiMeta"
-	"github.com/tencentyun/tsf-go/pkg/sys/env"
-	"github.com/tencentyun/tsf-go/pkg/sys/metrics"
-	"github.com/tencentyun/tsf-go/pkg/sys/trace"
-	"github.com/tencentyun/tsf-go/pkg/util"
-	"github.com/tencentyun/tsf-go/pkg/version"
+	"github.com/hisonsoft/tsf-go/log"
+	"github.com/hisonsoft/tsf-go/pkg/auth"
+	"github.com/hisonsoft/tsf-go/pkg/auth/authenticator"
+	cfgConsul "github.com/hisonsoft/tsf-go/pkg/config/consul"
+	tgrpc "github.com/hisonsoft/tsf-go/pkg/grpc"         // NOTE: open json encoding by set header Content-Type: application/grpc+json
+	"github.com/hisonsoft/tsf-go/pkg/grpc/encoding/json" // NOTE: open json encoding by set header Content-Type: application/grpc+json
+	"github.com/hisonsoft/tsf-go/pkg/naming"
+	"github.com/hisonsoft/tsf-go/pkg/naming/consul"
+	"github.com/hisonsoft/tsf-go/pkg/proxy"
+	"github.com/hisonsoft/tsf-go/pkg/sys/apiMeta"
+	"github.com/hisonsoft/tsf-go/pkg/sys/env"
+	"github.com/hisonsoft/tsf-go/pkg/sys/metrics"
+	"github.com/hisonsoft/tsf-go/pkg/sys/trace"
+	"github.com/hisonsoft/tsf-go/pkg/util"
+	"github.com/hisonsoft/tsf-go/pkg/version"
 
 	"github.com/openzipkin/zipkin-go"
 	zipkingrpc "github.com/openzipkin/zipkin-go/middleware/grpc"

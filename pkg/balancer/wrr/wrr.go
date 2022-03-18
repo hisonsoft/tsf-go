@@ -9,9 +9,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tencentyun/tsf-go/log"
-	"github.com/tencentyun/tsf-go/pkg/balancer"
-	"github.com/tencentyun/tsf-go/pkg/naming"
+	"github.com/hisonsoft/tsf-go/log"
+	"github.com/hisonsoft/tsf-go/pkg/balancer"
+	"github.com/hisonsoft/tsf-go/pkg/naming"
 )
 
 var (

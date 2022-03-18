@@ -3,7 +3,7 @@ package route
 import (
 	"context"
 
-	"github.com/tencentyun/tsf-go/pkg/naming"
+	"github.com/hisonsoft/tsf-go/pkg/naming"
 )
 
 type Router interface {

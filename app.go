@@ -1,9 +1,9 @@
 package tsf
 
 import (
-	"github.com/tencentyun/tsf-go/naming/consul"
-	"github.com/tencentyun/tsf-go/pkg/sys/env"
-	"github.com/tencentyun/tsf-go/pkg/version"
+	"github.com/hisonsoft/tsf-go/naming/consul"
+	"github.com/hisonsoft/tsf-go/pkg/sys/env"
+	"github.com/hisonsoft/tsf-go/pkg/version"
 
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/swagger-api/openapiv2"

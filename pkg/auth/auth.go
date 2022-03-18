@@ -3,8 +3,8 @@ package auth
 import (
 	"context"
 
-	"github.com/tencentyun/tsf-go/pkg/config"
-	"github.com/tencentyun/tsf-go/pkg/naming"
+	"github.com/hisonsoft/tsf-go/pkg/config"
+	"github.com/hisonsoft/tsf-go/pkg/naming"
 )
 
 type Builder interface {

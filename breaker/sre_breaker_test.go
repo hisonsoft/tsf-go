@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/hisonsoft/tsf-go/pkg/metric"
 	"github.com/stretchr/testify/assert"
-	"github.com/tencentyun/tsf-go/pkg/metric"
 )
 
 func markSuccess(b Breaker, count int) {

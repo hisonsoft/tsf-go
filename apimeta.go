@@ -9,7 +9,7 @@ import (
 
 	"github.com/go-kratos/kratos/v2/api/metadata"
 	"github.com/go-kratos/swagger-api/openapiv2"
-	"github.com/tencentyun/tsf-go/log"
+	"github.com/hisonsoft/tsf-go/log"
 )
 
 func genAPIMeta(md map[string]string, srv *openapiv2.Service, serviceName string) {

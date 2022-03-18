@@ -1,7 +1,7 @@
 
-[TSF-Go](https://github.com/tencentyun/tsf-go)基于轻量级 Go 微服务框架[Kratos](https://github.com/go-kratos/kratos)为用户现存的 Go 应用提供了接入TSF（[腾讯云微服务治理平台](https://cloud.tencent.com/document/product/649)）治理平台的能力。
+[TSF-Go](https://github.com/hisonsoft/tsf-go)基于轻量级 Go 微服务框架[Kratos](https://github.com/go-kratos/kratos)为用户现存的 Go 应用提供了接入TSF（[腾讯云微服务治理平台](https://cloud.tencent.com/document/product/649)）治理平台的能力。
 
-> 您也可以通过 [SDK文档](https://github.com/tencentyun/tsf-go) 查看 TSF GO 最新使用说明。
+> 您也可以通过 [SDK文档](https://github.com/hisonsoft/tsf-go) 查看 TSF GO 最新使用说明。
 
 # 功能特性
 - 自动集成 TSF 平台治理能力：分布式远程配置、远程日志、分布式调用链追踪、监控、服务鉴权、服务路由、全链路灰度发布、API 自动上报。
@@ -41,7 +41,7 @@ package helloworld;
 import "google/api/annotations.proto";
 
 // 这里go_package指定的是protofbu生成文件xxx.pb.go在git上的地址
-option go_package = "github.com/tencentyun/tsf-go/examples/helloworld/proto";
+option go_package = "github.com/hisonsoft/tsf-go/examples/helloworld/proto";
 
 // 定义服务名service_name
 service Greeter {
@@ -64,7 +64,7 @@ message HelloReply {
 如上，这里我们定义了一个Greeter服务，这个服务里面有个SayHello方法，接收一个包含msg字符串的HelloRequest参数，返回HelloReply数据。
 这里需要注意以下几点：
 - syntax必须是proto3，tsf go都是基于proto3通信的。
-- package后面必须有option go_package="github.com/tencentyun/tsf-go/examples/helloworld/proto";指明你的pb.go生成文件的git存放地址，协议与服务分离，方便其他人直接引用
+- package后面必须有option go_package="github.com/hisonsoft/tsf-go/examples/helloworld/proto";指明你的pb.go生成文件的git存放地址，协议与服务分离，方便其他人直接引用
 - 编写protobuf时必须遵循[谷歌官方规范](https://developers.google.com/protocol-buffers/docs/style)。
 
 #### 2.生成服务端桩代码xxx.pb.go代码
@@ -74,7 +74,7 @@ message HelloReply {
 
 #### 3.编写service实现层代码
 ```go
-import	pb "github.com/tencentyun/tsf-go/examples/helloworld/proto"
+import	pb "github.com/hisonsoft/tsf-go/examples/helloworld/proto"
 
 // server is used to implement helloworld.GreeterServer.
 type server struct {
@@ -88,8 +88,8 @@ func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloRe
 ```
 #### 4.编写server(grpc协议)启动入口main.go
 ```go
-import  pb "github.com/tencentyun/tsf-go/examples/helloworld/proto"
-import 	tsf "github.com/tencentyun/tsf-go"
+import  pb "github.com/hisonsoft/tsf-go/examples/helloworld/proto"
+import 	tsf "github.com/hisonsoft/tsf-go"
 import  "github.com/go-kratos/kratos/v2"
 import  "github.com/go-kratos/kratos/v2/transport/grpc"
 
@@ -131,8 +131,8 @@ func main() {
 ## 客户端开发（grpc协议）
 ### 1.编写客户端代码
 ```go
-import  pb "github.com/tencentyun/tsf-go/examples/helloworld/proto"
-import  tsf "github.com/tencentyun/tsf-go"
+import  pb "github.com/hisonsoft/tsf-go/examples/helloworld/proto"
+import  tsf "github.com/hisonsoft/tsf-go"
 import 	"github.com/go-kratos/kratos/v2/transport/grpc"
 import  "import  "github.com/go-kratos/kratos/v2"
 
@@ -197,19 +197,19 @@ CMD ["sh", "-ec", "exec ${workdir}provider ${JAVA_OPTS}"]
 参考文档[TSF部署组](https://cloud.tencent.com/document/product/649/15525)
 
 # 更多文档
-- [HTTP Restful开发](https://github.com/tencentyun/tsf-go/blob/master/docs/HTTP.md)
-- [TSF远程配置](https://github.com/tencentyun/tsf-go/blob/master/docs/Config.md)
-- [Swagger API上报](https://github.com/tencentyun/tsf-go/blob/master/docs/Swagger.md)
-- [错误定义](https://github.com/tencentyun/tsf-go/blob/master/docs/Error.md)
-- [分布式调用链追踪](https://github.com/tencentyun/tsf-go/blob/master/docs/Trace.md)
-- [自定义标签](https://github.com/tencentyun/tsf-go/blob/master/docs/Metadata.md)
-- [负载均衡](https://github.com/tencentyun/tsf-go/blob/master/docs/Balancer.md)
-- [自适应熔断](https://github.com/tencentyun/tsf-go/blob/master/docs/Breaker.md)
+- [HTTP Restful开发](https://github.com/hisonsoft/tsf-go/blob/master/docs/HTTP.md)
+- [TSF远程配置](https://github.com/hisonsoft/tsf-go/blob/master/docs/Config.md)
+- [Swagger API上报](https://github.com/hisonsoft/tsf-go/blob/master/docs/Swagger.md)
+- [错误定义](https://github.com/hisonsoft/tsf-go/blob/master/docs/Error.md)
+- [分布式调用链追踪](https://github.com/hisonsoft/tsf-go/blob/master/docs/Trace.md)
+- [自定义标签](https://github.com/hisonsoft/tsf-go/blob/master/docs/Metadata.md)
+- [负载均衡](https://github.com/hisonsoft/tsf-go/blob/master/docs/Balancer.md)
+- [自适应熔断](https://github.com/hisonsoft/tsf-go/blob/master/docs/Breaker.md)
 # Examples
-- [gRPC](https://github.com/tencentyun/tsf-go/blob/master/examples/helloworld/grpc)
-- [HTTP](https://github.com/tencentyun/tsf-go/blob/master/examples/helloworld/http)
-- [gin-go](https://github.com/tencentyun/tsf-go/blob/master/examples/helloworld/gin)
-- [log](https://github.com/tencentyun/tsf-go/blob/master/examples/log)
-- [error](https://github.com/tencentyun/tsf-go/blob/master/examples/error)
-- [tracing](https://github.com/tencentyun/tsf-go/blob/master/examples/tracing)
-- [breaker](https://github.com/tencentyun/tsf-go/blob/master/examples/breaker)
+- [gRPC](https://github.com/hisonsoft/tsf-go/blob/master/examples/helloworld/grpc)
+- [HTTP](https://github.com/hisonsoft/tsf-go/blob/master/examples/helloworld/http)
+- [gin-go](https://github.com/hisonsoft/tsf-go/blob/master/examples/helloworld/gin)
+- [log](https://github.com/hisonsoft/tsf-go/blob/master/examples/log)
+- [error](https://github.com/hisonsoft/tsf-go/blob/master/examples/error)
+- [tracing](https://github.com/hisonsoft/tsf-go/blob/master/examples/tracing)
+- [breaker](https://github.com/hisonsoft/tsf-go/blob/master/examples/breaker)

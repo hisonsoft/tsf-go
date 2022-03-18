@@ -8,8 +8,8 @@ import (
 	"net/http/pprof"
 
 	"github.com/google/gops/agent"
-	"github.com/tencentyun/tsf-go/log"
-	"github.com/tencentyun/tsf-go/pkg/sys/env"
+	"github.com/hisonsoft/tsf-go/log"
+	"github.com/hisonsoft/tsf-go/pkg/sys/env"
 	"go.uber.org/zap"
 )
 

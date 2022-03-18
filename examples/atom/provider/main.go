@@ -11,9 +11,9 @@ import (
 	"github.com/go-kratos/kratos/v2/middleware/logging"
 	"github.com/go-kratos/kratos/v2/middleware/recovery"
 	"github.com/go-kratos/kratos/v2/transport/http"
-	tsf "github.com/tencentyun/tsf-go"
-	pb "github.com/tencentyun/tsf-go/examples/atom/proto"
-	"github.com/tencentyun/tsf-go/log"
+	tsf "github.com/hisonsoft/tsf-go"
+	pb "github.com/hisonsoft/tsf-go/examples/atom/proto"
+	"github.com/hisonsoft/tsf-go/log"
 	emptypb "google.golang.org/protobuf/types/known/emptypb"
 )
 

@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tencentyun/tsf-go/log"
+	"github.com/hisonsoft/tsf-go/log"
 )
 
 var monitor *Monitor

@@ -7,8 +7,8 @@ import (
 
 	"github.com/go-kratos/kratos/v2/errors"
 	"github.com/go-kratos/kratos/v2/registry"
-	"github.com/tencentyun/tsf-go/log"
-	"github.com/tencentyun/tsf-go/naming"
+	"github.com/hisonsoft/tsf-go/log"
+	"github.com/hisonsoft/tsf-go/naming"
 )
 
 func (c *Consul) Register(ctx context.Context, ki *registry.ServiceInstance) (err error) {

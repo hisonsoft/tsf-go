@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tencentyun/tsf-go/pkg/config"
+	"github.com/hisonsoft/tsf-go/pkg/config"
 	"gopkg.in/yaml.v3"
 )
 

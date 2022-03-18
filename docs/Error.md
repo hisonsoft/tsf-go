@@ -33,7 +33,7 @@ package helloworld;
 // import third party proto
 import "errors/errors.proto";
 
-option go_package = "github.com/tencentyun/tsf-go/examples/error/errors";
+option go_package = "github.com/hisonsoft/tsf-go/examples/error/errors";
 
 enum ErrorReason {
   // 设置缺省错误码
@@ -53,7 +53,7 @@ protoc --proto_path=. \
 --go-errors_out=paths=source_relative:. \
 *.proto
 ```
-注意需要将proto依赖的[third_party](https://github.com/tencentyun/tsf-go/tree/master/third_party)下载至您的项目中，并替换成实际路径
+注意需要将proto依赖的[third_party](https://github.com/hisonsoft/tsf-go/tree/master/third_party)下载至您的项目中，并替换成实际路径
 4.使用生成的 errors 辅助代码：
 ```go
 // server return error

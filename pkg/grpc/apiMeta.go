@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/fullstorydev/grpcurl"
+	"github.com/hisonsoft/tsf-go/log"
+	"github.com/hisonsoft/tsf-go/pkg/sys/apiMeta"
 	"github.com/jhump/protoreflect/grpcreflect"
-	"github.com/tencentyun/tsf-go/log"
-	"github.com/tencentyun/tsf-go/pkg/sys/apiMeta"
 	"google.golang.org/grpc"
 	rpb "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
 )

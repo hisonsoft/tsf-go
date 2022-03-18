@@ -1,6 +1,6 @@
 ### 分布式配置
 #### 1. 引入配置模块
-`"github.com/tencentyun/tsf-go/config"`
+`"github.com/hisonsoft/tsf-go/config"`
 
 #### 2. 非阻塞获取某一个配置值
 ```go

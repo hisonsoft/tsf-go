@@ -12,7 +12,7 @@ package helloworld;
 import "google/api/annotations.proto";
 
 // 这里go_package指定的是protofbu生成文件xxx.pb.go在git上的地址
-option go_package = "github.com/tencentyun/tsf-go/examples/helloworld/proto";
+option go_package = "github.com/hisonsoft/tsf-go/examples/helloworld/proto";
 
 // 定义服务名service_name
 service Greeter {
@@ -48,10 +48,10 @@ message HelloReply {
 `protoc --proto_path=. --proto_path=./third_party
 --go_out=paths=source_relative:. --go_out=paths=source_relative:. --go-http_out=paths=source_relative:.  *.proto`
 - 如果没有定义google.api.http，但仍想生成xxx_http.pb.go代码，则生成时需要加上参数--go-http_opt=omitempty=false
-- 注意需要将proto依赖的[third_party](https://github.com/tencentyun/tsf-go/tree/master/third_party)下载至您的项目中，并替换成实际路径
+- 注意需要将proto依赖的[third_party](https://github.com/hisonsoft/tsf-go/tree/master/third_party)下载至您的项目中，并替换成实际路径
 #### 3.编写service实现层代码
 ```go
-import	pb "github.com/tencentyun/tsf-go/examples/helloworld/proto"
+import	pb "github.com/hisonsoft/tsf-go/examples/helloworld/proto"
 
 // server is used to implement helloworld.GreeterServer.
 type server struct {
@@ -65,8 +65,8 @@ func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloRe
 ```
 #### 4.编写server(http协议)启动入口main.go
 ```go
-import  pb "github.com/tencentyun/tsf-go/examples/helloworld/proto"
-import 	tsf "github.com/tencentyun/tsf-go"
+import  pb "github.com/hisonsoft/tsf-go/examples/helloworld/proto"
+import 	tsf "github.com/hisonsoft/tsf-go"
 import  "github.com/go-kratos/kratos/v2"
 import  "github.com/go-kratos/kratos/v2/transport/grpc"
 
@@ -99,8 +99,8 @@ func main() {
 ## 客户端开发（http协议）
 ### 1.编写客户端代码
 ```go
-import  pb "github.com/tencentyun/tsf-go/examples/helloworld/proto"
-import  tsf "github.com/tencentyun/tsf-go"
+import  pb "github.com/hisonsoft/tsf-go/examples/helloworld/proto"
+import  tsf "github.com/hisonsoft/tsf-go"
 import 	"github.com/go-kratos/kratos/v2/transport/grpc"
 import  "import  "github.com/go-kratos/kratos/v2"
 

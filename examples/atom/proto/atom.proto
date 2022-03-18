@@ -5,7 +5,7 @@ package atom;
 import "google/api/annotations.proto";
 import "google/protobuf/empty.proto";
 
-option go_package = "github.com/tencentyun/tsf-go/examples/atom/proto";
+option go_package = "github.com/hisonsoft/tsf-go/examples/atom/proto";
 
 // The greeting service definition.
 service Greeter {

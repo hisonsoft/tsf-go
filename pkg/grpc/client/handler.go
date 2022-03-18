@@ -6,12 +6,12 @@ import (
 	"strconv"
 
 	"github.com/go-kratos/kratos/v2/errors"
+	"github.com/hisonsoft/tsf-go/pkg/meta"
+	"github.com/hisonsoft/tsf-go/pkg/sys/env"
+	"github.com/hisonsoft/tsf-go/pkg/sys/monitor"
 	"github.com/openzipkin/zipkin-go"
 	"github.com/openzipkin/zipkin-go/model"
 	"github.com/openzipkin/zipkin-go/propagation/b3"
-	"github.com/tencentyun/tsf-go/pkg/meta"
-	"github.com/tencentyun/tsf-go/pkg/sys/env"
-	"github.com/tencentyun/tsf-go/pkg/sys/monitor"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"

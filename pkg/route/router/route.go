@@ -8,12 +8,12 @@ import (
 	"sync/atomic"
 
 	"github.com/go-kratos/kratos/v2/errors"
-	"github.com/tencentyun/tsf-go/log"
-	"github.com/tencentyun/tsf-go/pkg/config"
-	"github.com/tencentyun/tsf-go/pkg/config/consul"
-	"github.com/tencentyun/tsf-go/pkg/naming"
-	"github.com/tencentyun/tsf-go/pkg/route"
-	"github.com/tencentyun/tsf-go/pkg/sys/env"
+	"github.com/hisonsoft/tsf-go/log"
+	"github.com/hisonsoft/tsf-go/pkg/config"
+	"github.com/hisonsoft/tsf-go/pkg/config/consul"
+	"github.com/hisonsoft/tsf-go/pkg/naming"
+	"github.com/hisonsoft/tsf-go/pkg/route"
+	"github.com/hisonsoft/tsf-go/pkg/sys/env"
 )
 
 var (

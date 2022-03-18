@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	tsf "github.com/tencentyun/tsf-go"
+	tsf "github.com/hisonsoft/tsf-go"
 
 	"github.com/go-kratos/kratos/v2/errors"
 	"github.com/luna-duclos/instrumentedsql"

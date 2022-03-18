@@ -5,7 +5,7 @@ package helloworld;
 // import third party proto
 import "errors/errors.proto";
 
-option go_package = "github.com/tencentyun/tsf-go/examples/error/errors";
+option go_package = "github.com/hisonsoft/tsf-go/examples/error/errors";
 
 enum ErrorReason {
   // 设置缺省错误码

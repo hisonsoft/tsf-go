@@ -11,11 +11,11 @@ import (
 	"time"
 
 	"github.com/go-kratos/kratos/v2/errors"
-	"github.com/tencentyun/tsf-go/log"
-	"github.com/tencentyun/tsf-go/pkg/http"
-	"github.com/tencentyun/tsf-go/pkg/naming"
-	"github.com/tencentyun/tsf-go/pkg/sys/env"
-	"github.com/tencentyun/tsf-go/pkg/util"
+	"github.com/hisonsoft/tsf-go/log"
+	"github.com/hisonsoft/tsf-go/pkg/http"
+	"github.com/hisonsoft/tsf-go/pkg/naming"
+	"github.com/hisonsoft/tsf-go/pkg/sys/env"
+	"github.com/hisonsoft/tsf-go/pkg/util"
 
 	"go.uber.org/zap"
 )

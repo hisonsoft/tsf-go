@@ -4,11 +4,11 @@ import (
 	"context"
 	"sync"
 
-	"github.com/tencentyun/tsf-go/naming"
-	"github.com/tencentyun/tsf-go/route"
-	"github.com/tencentyun/tsf-go/route/router"
+	"github.com/hisonsoft/tsf-go/naming"
+	"github.com/hisonsoft/tsf-go/route"
+	"github.com/hisonsoft/tsf-go/route/router"
 
-	"github.com/tencentyun/tsf-go/route/lane"
+	"github.com/hisonsoft/tsf-go/route/lane"
 )
 
 var (

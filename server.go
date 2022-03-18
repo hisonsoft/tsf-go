@@ -7,11 +7,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/tencentyun/tsf-go/log"
-	tsfHttp "github.com/tencentyun/tsf-go/pkg/http"
-	"github.com/tencentyun/tsf-go/pkg/meta"
-	"github.com/tencentyun/tsf-go/pkg/sys/env"
-	"github.com/tencentyun/tsf-go/pkg/util"
+	"github.com/hisonsoft/tsf-go/log"
+	tsfHttp "github.com/hisonsoft/tsf-go/pkg/http"
+	"github.com/hisonsoft/tsf-go/pkg/meta"
+	"github.com/hisonsoft/tsf-go/pkg/sys/env"
+	"github.com/hisonsoft/tsf-go/pkg/util"
 
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/metadata"

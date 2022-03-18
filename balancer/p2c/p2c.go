@@ -9,10 +9,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tencentyun/tsf-go/balancer"
-	"github.com/tencentyun/tsf-go/log"
-	"github.com/tencentyun/tsf-go/naming"
-	"github.com/tencentyun/tsf-go/pkg/metric"
+	"github.com/hisonsoft/tsf-go/balancer"
+	"github.com/hisonsoft/tsf-go/log"
+	"github.com/hisonsoft/tsf-go/naming"
+	"github.com/hisonsoft/tsf-go/pkg/metric"
 
 	"github.com/go-kratos/kratos/v2/errors"
 )

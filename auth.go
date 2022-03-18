@@ -6,11 +6,11 @@ import (
 
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/middleware"
-	"github.com/tencentyun/tsf-go/pkg/auth"
-	"github.com/tencentyun/tsf-go/pkg/auth/authenticator"
-	"github.com/tencentyun/tsf-go/pkg/config/consul"
-	"github.com/tencentyun/tsf-go/pkg/naming"
-	"github.com/tencentyun/tsf-go/pkg/sys/env"
+	"github.com/hisonsoft/tsf-go/pkg/auth"
+	"github.com/hisonsoft/tsf-go/pkg/auth/authenticator"
+	"github.com/hisonsoft/tsf-go/pkg/config/consul"
+	"github.com/hisonsoft/tsf-go/pkg/naming"
+	"github.com/hisonsoft/tsf-go/pkg/sys/env"
 )
 
 func authMiddleware() middleware.Middleware {

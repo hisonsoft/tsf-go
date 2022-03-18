@@ -4,9 +4,9 @@ import (
 	"context"
 
 	"github.com/go-kratos/kratos/v2/transport/http"
-	"github.com/tencentyun/tsf-go"
-	pb "github.com/tencentyun/tsf-go/examples/helloworld/proto"
-	"github.com/tencentyun/tsf-go/log"
+	"github.com/hisonsoft/tsf-go"
+	pb "github.com/hisonsoft/tsf-go/examples/helloworld/proto"
+	"github.com/hisonsoft/tsf-go/log"
 )
 
 func main() {

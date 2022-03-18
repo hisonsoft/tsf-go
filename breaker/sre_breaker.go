@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/go-kratos/kratos/v2/errors"
-	"github.com/tencentyun/tsf-go/pkg/metric"
+	"github.com/hisonsoft/tsf-go/pkg/metric"
 )
 
 // sreBreaker is a sre CircuitBreaker pattern.

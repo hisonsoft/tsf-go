@@ -5,10 +5,10 @@ import (
 	"math/rand"
 	"time"
 
-	tsf "github.com/tencentyun/tsf-go"
-	"github.com/tencentyun/tsf-go/breaker"
-	pb "github.com/tencentyun/tsf-go/examples/helloworld/proto"
-	"github.com/tencentyun/tsf-go/log"
+	tsf "github.com/hisonsoft/tsf-go"
+	"github.com/hisonsoft/tsf-go/breaker"
+	pb "github.com/hisonsoft/tsf-go/examples/helloworld/proto"
+	"github.com/hisonsoft/tsf-go/log"
 
 	"github.com/go-kratos/kratos/v2/errors"
 	"github.com/go-kratos/kratos/v2/transport/http"

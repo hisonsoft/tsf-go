@@ -7,7 +7,7 @@ import (
 	"runtime"
 
 	"github.com/go-kratos/kratos/v2/errors"
-	"github.com/tencentyun/tsf-go/log"
+	"github.com/hisonsoft/tsf-go/log"
 	"google.golang.org/grpc"
 )
 

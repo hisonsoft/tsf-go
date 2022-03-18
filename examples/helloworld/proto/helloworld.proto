@@ -4,7 +4,7 @@ package helloworld;
 
 import "google/api/annotations.proto";
 
-option go_package = "github.com/tencentyun/tsf-go/examples/helloworld/proto";
+option go_package = "github.com/hisonsoft/tsf-go/examples/helloworld/proto";
 
 // The greeting service definition.
 service Greeter {

@@ -2,7 +2,7 @@
 ## Quick Start
 #### 1. 初始化log helper
 ```go
-import 	"github.com/tencentyun/tsf-go/log"
+import 	"github.com/hisonsoft/tsf-go/log"
 
 // 默认日志配置项，等同于log.NewLogger()
 // 当没有显示配置日志输出地址时，运行在tsf平台时默认会输出到/data/logs/root.log

@@ -3,7 +3,7 @@ package tracing
 import (
 	"context"
 
-	"github.com/tencentyun/tsf-go/util"
+	"github.com/hisonsoft/tsf-go/util"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/trace"
 	"google.golang.org/grpc/peer"

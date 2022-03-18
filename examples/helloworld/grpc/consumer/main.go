@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/go-kratos/kratos/v2/transport/grpc"
-	pb "github.com/tencentyun/tsf-go/examples/helloworld/proto"
-	"github.com/tencentyun/tsf-go/naming/consul"
+	pb "github.com/hisonsoft/tsf-go/examples/helloworld/proto"
+	"github.com/hisonsoft/tsf-go/naming/consul"
 )
 
 func main() {

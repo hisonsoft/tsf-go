@@ -2,13 +2,13 @@
 tsf-go已自动集成Opentelemery SDK(opentracing协议)，同时会上报给TSF 调用链追踪平台，默认10%采样率
 1. 自定义采样率：
 ```go
-import 	"github.com/tencentyun/tsf-go/tracing"
+import 	"github.com/hisonsoft/tsf-go/tracing"
 // 设置采样率为100%
 tracing.SetProvider(tracing.WithSampleRatio(1.0))
 ```
 2. 自定义trace span输出（tsf默认以zipkin协议格式输出至/data/tsf_apm/trace/log/trace_log.log）
 ```go
-import 	"github.com/tencentyun/tsf-go/tracing"
+import 	"github.com/hisonsoft/tsf-go/tracing"
 
 type exporter struct {
 }
@@ -42,8 +42,8 @@ import 	"database/sql"
 import 	"github.com/go-sql-driver/mysql"
 import 	"github.com/go-redis/redis/v8"
 import 	"github.com/luna-duclos/instrumentedsql"
-import 	"github.com/tencentyun/tsf-go/tracing/mysqlotel"
-import	"github.com/tencentyun/tsf-go/tracing/redisotel"
+import 	"github.com/hisonsoft/tsf-go/tracing/mysqlotel"
+import	"github.com/hisonsoft/tsf-go/tracing/redisotel"
 
 // 添加redis tracing hook
 redisClient.AddHook(redisotel.New("127.0.0.1:6379"))

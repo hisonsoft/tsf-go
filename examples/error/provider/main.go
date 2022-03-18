@@ -9,10 +9,10 @@ import (
 	"github.com/go-kratos/kratos/v2/middleware/logging"
 	"github.com/go-kratos/kratos/v2/middleware/recovery"
 	"github.com/go-kratos/kratos/v2/transport/http"
-	tsf "github.com/tencentyun/tsf-go"
-	"github.com/tencentyun/tsf-go/examples/error/errors"
-	pb "github.com/tencentyun/tsf-go/examples/helloworld/proto"
-	"github.com/tencentyun/tsf-go/log"
+	tsf "github.com/hisonsoft/tsf-go"
+	"github.com/hisonsoft/tsf-go/examples/error/errors"
+	pb "github.com/hisonsoft/tsf-go/examples/helloworld/proto"
+	"github.com/hisonsoft/tsf-go/log"
 )
 
 // server is used to implement helloworld.GreeterServer.

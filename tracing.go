@@ -4,10 +4,10 @@ import (
 	"context"
 	"net/url"
 
-	"github.com/tencentyun/tsf-go/gin"
-	"github.com/tencentyun/tsf-go/pkg/meta"
-	"github.com/tencentyun/tsf-go/tracing"
-	"github.com/tencentyun/tsf-go/util"
+	"github.com/hisonsoft/tsf-go/gin"
+	"github.com/hisonsoft/tsf-go/pkg/meta"
+	"github.com/hisonsoft/tsf-go/tracing"
+	"github.com/hisonsoft/tsf-go/util"
 
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/middleware"

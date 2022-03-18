@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/tencentyun/tsf-go/config"
+	"github.com/hisonsoft/tsf-go/config"
 )
 
 type AppConfig struct {
