@@ -92,7 +92,7 @@ func FromKratosInstance(ki *registry.ServiceInstance) (inss []*Instance) {
 			id += "-" + scheme
 		}
 		ins := &Instance{
-			Service:  &Service{Namespace: ki.Metadata[NamespaceID], Name: ki.Name},
+			Service:  &Service{Namespace: ki.Metadata[NamespaceID], Name: ki.Name + "_" + scheme},
 			ID:       id,
 			Region:   ki.Metadata[Region],
 			Host:     ip,
