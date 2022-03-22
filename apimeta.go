@@ -5,7 +5,6 @@ import (
 	"compress/gzip"
 	"context"
 	"encoding/base64"
-	"fmt"
 	"time"
 
 	"github.com/go-kratos/kratos/v2/api/metadata"
@@ -14,7 +13,6 @@ import (
 )
 
 func genAPIMeta(md map[string]string, srv *openapiv2.Service, serviceName string) {
-	fmt.Println(serviceName)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*2)
 	defer cancel()
 	var httpAPIMeta string
@@ -34,10 +32,8 @@ func genAPIMeta(md map[string]string, srv *openapiv2.Service, serviceName string
 		if err == nil {
 			services := []metadata.GetServiceDescRequest{}
 			for _, service := range reply.Services {
-				fmt.Println(service)
 				if service != "grpc.health.v1.Health" && service != "grpc.reflection.v1alpha.ServerReflection" && service != "kratos.api.Metadata" {
 					services = append(services, metadata.GetServiceDescRequest{Name: service})
-					// break
 				}
 			}
 			if len(services) > 0 {
@@ -55,7 +51,6 @@ func genAPIMeta(md map[string]string, srv *openapiv2.Service, serviceName string
 		}
 	}
 	if httpAPIMeta != "" {
-		fmt.Println(httpAPIMeta)
 		var buf bytes.Buffer
 		zw := gzip.NewWriter(&buf)
 		_, err := zw.Write([]byte(httpAPIMeta))

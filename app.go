@@ -58,7 +58,6 @@ func Metadata(optFuncs ...Option) (opt kratos.Option) {
 	if env.Token() == "" {
 		enableApiMeta = false
 	}
-	enableApiMeta = true
 
 	var opts appOptions = appOptions{}
 	for _, o := range optFuncs {
