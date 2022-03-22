@@ -145,8 +145,8 @@ github.com/go-kratos/kratos/v2 v2.0.0-20210701014935-bdb51d26969e h1:AYqf3aU+02f
 github.com/go-kratos/kratos/v2 v2.0.0-20210701014935-bdb51d26969e/go.mod h1:nx31Dq7MS1gV6Eva0KhBW/iWmqZBt3ZG+lOWy+Fsiv0=
 github.com/go-kratos/kratos/v2 v2.0.0 h1:3IS/6jgbFfQtK9PTRs4mEhhXXA36xnKTaTKfcKiO96I=
 github.com/go-kratos/kratos/v2 v2.0.0/go.mod h1:USzTcAP7LS1rHVITQ/x/5JvlkUpG17pnfbqYV4j7SWc=
-github.com/go-kratos/swagger-api v0.1.7 h1:ADuErm5cLWZQ+RIsrX2V2HcA584IAbj0FpJ+47txgB8=
-github.com/go-kratos/swagger-api v0.1.7/go.mod h1:0BLJ3/Lv4vhdXAIAwvBcVyXzRIlcv4eUkNuoFDzO760=
+github.com/hisonsoft/swagger-api v0.1.7 h1:ADuErm5cLWZQ+RIsrX2V2HcA584IAbj0FpJ+47txgB8=
+github.com/hisonsoft/swagger-api v0.1.7/go.mod h1:0BLJ3/Lv4vhdXAIAwvBcVyXzRIlcv4eUkNuoFDzO760=
 github.com/go-logfmt/logfmt v0.3.0/go.mod h1:Qt1PoO58o5twSAckw1HlFXLmHsOX5/0LbT9GBnD5lWE=
 github.com/go-logfmt/logfmt v0.4.0/go.mod h1:3RMwSq7FuexP4Kalkev3ejPJsZTpXXBr9+V4qmtdjCk=
 github.com/go-ole/go-ole v1.2.4/go.mod h1:XCwSNxSkXRo4vlyPy93sltvi/qJq0jqQhjqQNIwKuxM=

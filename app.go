@@ -6,7 +6,7 @@ import (
 	"github.com/hisonsoft/tsf-go/pkg/version"
 
 	"github.com/go-kratos/kratos/v2"
-	"github.com/go-kratos/swagger-api/openapiv2"
+	"github.com/hisonsoft/swagger-api/openapiv2"
 	"google.golang.org/grpc"
 )
 
@@ -58,6 +58,7 @@ func Metadata(optFuncs ...Option) (opt kratos.Option) {
 	if env.Token() == "" {
 		enableApiMeta = false
 	}
+	enableApiMeta = true
 
 	var opts appOptions = appOptions{}
 	for _, o := range optFuncs {
