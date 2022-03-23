@@ -9,7 +9,6 @@ import (
 	"github.com/hisonsoft/tsf-go/balancer/p2c"
 	"github.com/hisonsoft/tsf-go/breaker"
 	"github.com/hisonsoft/tsf-go/grpc/balancer/multi"
-	httpMulti "github.com/hisonsoft/tsf-go/http/balancer/multi"
 	"github.com/hisonsoft/tsf-go/naming/consul"
 	"github.com/hisonsoft/tsf-go/pkg/meta"
 	"github.com/hisonsoft/tsf-go/pkg/sys/env"
@@ -22,6 +21,7 @@ import (
 	"github.com/go-kratos/kratos/v2/metadata"
 	"github.com/go-kratos/kratos/v2/middleware"
 	mmeta "github.com/go-kratos/kratos/v2/middleware/metadata"
+	hp2c "github.com/go-kratos/kratos/v2/selector/p2c"
 	"github.com/go-kratos/kratos/v2/transport"
 	tgrpc "github.com/go-kratos/kratos/v2/transport/grpc"
 	"github.com/go-kratos/kratos/v2/transport/http"
@@ -176,7 +176,9 @@ func ClientHTTPOptions(copts ...ClientOption) []http.ClientOption {
 
 	var opts []http.ClientOption
 	opts = []http.ClientOption{
-		http.WithBalancer(httpMulti.New(composite.DefaultComposite(), o.balancer)),
+		http.WithSelector(
+			hp2c.New(nil),
+		),
 		http.WithMiddleware(o.m...),
 	}
 	if o.enableDiscovery {
